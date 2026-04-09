@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jayvee Rodrigueza | Developer Portfolio</title>
+  <title>Jayvee Rodrigueza | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -22,15 +22,8 @@
       --border: rgba(255,255,255,0.12);
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
 
     body {
       font-family: 'Inter', sans-serif;
@@ -43,10 +36,7 @@
       line-height: 1.6;
     }
 
-    .container {
-      width: min(1150px, calc(100% - 32px));
-      margin: 0 auto;
-    }
+    .container { width: min(1150px, calc(100% - 32px)); margin: 0 auto; }
 
     .topbar {
       position: sticky;
@@ -64,32 +54,17 @@
       padding: 16px 0;
     }
 
-    .brand {
-      font-weight: 800;
-      letter-spacing: 0.4px;
-      font-size: 1.05rem;
-    }
+    .brand { font-weight: 800; letter-spacing: 0.4px; font-size: 1.05rem; }
+    .brand span { color: var(--accent); }
 
-    .brand span {
-      color: var(--accent);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
-
+    .nav-links { display: flex; gap: 18px; flex-wrap: wrap; }
     .nav-links a {
       color: var(--muted);
       text-decoration: none;
       font-size: 0.95rem;
       transition: 0.25s ease;
     }
-
-    .nav-links a:hover {
-      color: var(--text);
-    }
+    .nav-links a:hover { color: var(--text); }
 
     .hero {
       padding: 76px 0 42px;
@@ -133,11 +108,7 @@
       margin-bottom: 26px;
     }
 
-    .cta-row {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
+    .cta-row { display: flex; gap: 14px; flex-wrap: wrap; }
 
     .btn {
       display: inline-flex;
@@ -156,21 +127,14 @@
       color: white;
       box-shadow: var(--shadow);
     }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      filter: brightness(1.06);
-    }
+    .btn-primary:hover { transform: translateY(-2px); filter: brightness(1.06); }
 
     .btn-secondary {
       background: rgba(255,255,255,0.04);
       color: var(--text);
       border-color: var(--border);
     }
-
-    .btn-secondary:hover {
-      background: rgba(255,255,255,0.08);
-    }
+    .btn-secondary:hover { background: rgba(255,255,255,0.08); }
 
     .hero-card {
       background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.05));
@@ -209,20 +173,9 @@
       font-size: 0.95rem;
     }
 
-    .section {
-      padding: 34px 0;
-    }
-
-    .section-title {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-    }
-
-    .section-sub {
-      color: var(--muted);
-      margin-bottom: 22px;
-      max-width: 780px;
-    }
+    .section { padding: 34px 0; }
+    .section-title { font-size: 1.8rem; margin-bottom: 10px; }
+    .section-sub { color: var(--muted); margin-bottom: 22px; max-width: 780px; }
 
     .panel {
       background: var(--panel);
@@ -233,11 +186,7 @@
     }
 
     .about-grid,
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 22px;
-    }
+    .contact-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 22px; }
 
     .skills-grid {
       display: grid;
@@ -257,24 +206,12 @@
 
     .skill-box h3,
     .project-card h3,
-    .mini-card h3 {
-      margin-bottom: 12px;
-      font-size: 1.1rem;
-    }
+    .mini-card h3 { margin-bottom: 12px; font-size: 1.1rem; }
 
     .skill-list,
-    .project-list {
-      list-style: none;
-      display: grid;
-      gap: 10px;
-      color: var(--muted);
-    }
+    .project-list { list-style: none; display: grid; gap: 10px; color: var(--muted); }
 
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-    }
+    .project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
 
     .project-badge {
       display: inline-block;
@@ -288,13 +225,8 @@
       font-weight: 600;
     }
 
-    .muted {
-      color: var(--muted);
-    }
-
-    .highlight {
-      color: var(--accent);
-    }
+    .muted { color: var(--muted); }
+    .highlight { color: var(--accent); }
 
     .stats {
       display: grid;
@@ -304,18 +236,19 @@
     }
 
     .stat {
-      padding: 18px;
-      border-radius: 18px;
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.07);
-      text-align: center;
-    }
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.07);
+  text-align: center;
 
-    .stat strong {
-      display: block;
-      font-size: 1.5rem;
-      margin-bottom: 6px;
-    }
+  /* FIX */
+  overflow: hidden;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+    .stat strong { display: block; font-size: 1.5rem; margin-bottom: 6px; }
 
     .rate-box {
       display: inline-block;
@@ -339,44 +272,37 @@
       .about-grid,
       .contact-grid,
       .skills-grid,
-      .project-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding-top: 54px;
-      }
+      .project-grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 54px; }
     }
 
     @media (max-width: 640px) {
-      .nav {
-        flex-direction: column;
-        gap: 14px;
-      }
-
-      .nav-links {
-        justify-content: center;
-      }
-
+      .nav { flex-direction: column; gap: 14px; }
+      .nav-links { justify-content: center; }
       .stats,
-      .tag-grid {
-        grid-template-columns: 1fr;
-      }
-
+      .tag-grid { grid-template-columns: 1fr; }
       .panel,
       .skill-box,
       .project-card,
       .mini-card,
-      .hero-card {
-        padding: 20px;
-      }
+      .hero-card { padding: 20px; }
     }
+    .link-style {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.link-style:hover {
+  color: #44c2ff;
+}
   </style>
 </head>
 <body>
   <header class="topbar">
     <div class="container nav">
-      <div class="brand">Jayvee<span>.</span>Portfolio</div>
+      <div class="brand"  >Jayvee M. Rodrigueza<span> </span></div>
+      
       <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -389,12 +315,12 @@
   <main class="container">
     <section class="hero">
       <div>
-        <div class="eyebrow"><span class="dot"></span> Available for PHP / WordPress / System Support Work</div>
-        <h1>PHP Developer &<br><span class="highlight">Senior Application Support Analyst</span></h1>
+        <div class="eyebrow"><span class="dot"></span> Available for Senior Application Support / QA / PHP Work</div>
+        <h1>Senior Application Support Analyst &<br><span class="highlight">QA Engineer</span></h1>
         <p>
-          I help businesses troubleshoot, stabilize, and improve web systems with a strong focus on PHP,
-          MySQL, API integrations, and production support. I am experienced in analyzing live issues,
-          fixing broken workflows, and turning incomplete systems into stable, production-ready solutions.
+          I help businesses improve software quality, troubleshoot live systems, and build reliable automation workflows.
+          My experience covers Playwright with JavaScript, API validation, payment flow analysis, SQL investigation,
+          and production support for business-critical web applications.
         </p>
         <div class="cta-row">
           <a href="#projects" class="btn btn-primary">View My Projects</a>
@@ -404,27 +330,27 @@
 
       <aside class="hero-card">
         <h3 style="font-size:1.35rem; margin-bottom:10px;">Quick Profile</h3>
-        <p class="muted">Focused on debugging, backend logic, custom PHP systems, payment flows, and maintainable solutions.</p>
+        <p class="muted">Focused on Senior Application Support, QA automation, backend validation, API troubleshooting, payment flows, and stable system delivery.</p>
         <div class="tag-grid">
-          <div class="tag">PHP & MySQL</div>
-          <div class="tag">WordPress Support</div>
-          <div class="tag">API Integration</div>
+          <div class="tag">Playwright + JavaScript</div>
+          <div class="tag">QA Site Automation</div>
+          <div class="tag">API Integration Testing</div>
           <div class="tag">System Debugging</div>
-          <div class="tag">Booking Workflow Logic</div>
+          <div class="tag">SQL Investigation</div>
           <div class="tag">Production Issue Analysis</div>
         </div>
         <div class="stats">
+          <div class="stat">
+            <strong>Automation</strong>
+            <span class="muted">Playwright, JS</span>
+          </div>
           <div class="stat">
             <strong>Backend</strong>
             <span class="muted">PHP, SQL, APIs</span>
           </div>
           <div class="stat">
-            <strong>Frontend</strong>
-            <span class="muted">HTML, CSS, JS</span>
-          </div>
-          <div class="stat">
             <strong>Focus</strong>
-            <span class="muted">Stable systems</span>
+            <span class="muted">Quality & reliability</span>
           </div>
         </div>
       </aside>
@@ -436,15 +362,15 @@
       <div class="about-grid">
         <div class="panel">
           <p>
-            Hi, I’m <strong>Jayvee Rodrigueza</strong>, a PHP Developer and Application Support Analyst with strong experience in system troubleshooting, payment integrations, and production issue investigation.
+            Hi, I’m <strong>Jayvee Rodrigueza</strong>, a Senior Application Support Analyst with strong experience in system troubleshooting, payment integrations, production issue investigation, and QA automation using Playwright with JavaScript.
           </p>
           <br>
           <p>
-            In my current role, I help analyze live system problems, review logs, investigate API behavior, validate transaction flows, and support business-critical web applications. My work requires careful debugging, clear communication, and a strong understanding of how real systems behave in production.
+            I work on real-world systems where accuracy and stability matter. My experience includes analyzing live incidents, validating API behavior, reviewing logs, reproducing issues, and supporting business-critical applications used in production.
           </p>
           <br>
           <p>
-            I am comfortable working with custom-coded PHP systems, databases, and existing projects built by other developers. I can review code, identify issues, extend features, and help make the system more stable and user-friendly.
+            I also build and improve test automation using <strong>Playwright with JavaScript</strong> for site testing, regression coverage, and workflow validation. I am comfortable working with existing codebases, writing practical automated tests, and helping teams catch issues before they reach users.
           </p>
         </div>
 
@@ -452,9 +378,10 @@
           <h3>What Makes Me Different</h3>
           <ul class="project-list">
             <li>Strong experience with real production systems</li>
+            <li>Can automate site testing using Playwright and JavaScript</li>
+            <li>Strong background in Senior Application Support and production issue handling</li>
             <li>Can troubleshoot broken or incomplete workflows</li>
-            <li>Used to reading and continuing existing codebases</li>
-            <li>Hands-on with payment flows and backend integrations</li>
+            <li>Hands-on with API validation, payment flows, and SQL analysis</li>
             <li>Focused on reliability, clear updates, and practical solutions</li>
           </ul>
           <div class="rate-box">Expected Rate: ₱600 – ₱900 / hour</div>
@@ -464,20 +391,20 @@
 
     <section id="projects" class="section">
       <h2 class="section-title">Featured Projects</h2>
-      <p class="section-sub">These are my previous projects and Support role</p>
+      <p class="section-sub"></p>
       <div class="project-grid">
         <article class="project-card">
           <div class="project-badge">Project 01</div>
-          <h3>Retail POS System</h3>
+          <h3>QA Site Automation with Playwright</h3>
           <p class="muted" style="margin-bottom: 14px;">
-            Developed a web-based POS and ordering system with product management, cart handling, order placement, and admin functionality.
+            Built automated browser tests using Playwright and JavaScript to validate user flows, reduce manual testing, and catch regressions early.
           </p>
           <ul class="project-list">
-            <li>Product and category CRUD</li>
-            <li>Shopping cart using PHP sessions</li>
-            <li>Order processing workflow</li>
-            <li>Responsive Bootstrap interface</li>
-            <li>SweetAlert2 for user feedback</li>
+            <li>End-to-end automation for site workflows</li>
+            <li>Regression and smoke test coverage</li>
+            <li>UI validation for critical pages and actions</li>
+            <li>Form input, navigation, and response checking</li>
+            <li>Reusable test structure for faster QA execution</li>
           </ul>
         </article>
 
@@ -533,6 +460,15 @@
       <p class="section-sub"></p>
       <div class="skills-grid">
         <div class="skill-box">
+          <h3>Automation</h3>
+          <ul class="skill-list">
+            <li>Playwright</li>
+            <li>JavaScript</li>
+            <li>End-to-end testing</li>
+            <li>Regression testing</li>
+          </ul>
+        </div>
+        <div class="skill-box">
           <h3>Backend</h3>
           <ul class="skill-list">
             <li>PHP</li>
@@ -546,25 +482,15 @@
           <ul class="skill-list">
             <li>HTML</li>
             <li>CSS</li>
-            <li>React.js</li>
             <li>Bootstrap</li>
             <li>JavaScript / AJAX</li>
           </ul>
         </div>
         <div class="skill-box">
-          <h3>Systems</h3>
-          <ul class="skill-list">
-            <li>Debugging</li>
-            <li>Issue investigation</li>
-            <li>Code review</li>
-            <li>Workflow analysis</li>
-          </ul>
-        </div>
-        <div class="skill-box">
           <h3>Specialties</h3>
           <ul class="skill-list">
+            <li>API validation</li>
             <li>Payment integrations</li>
-            <li>Custom-coded systems</li>
             <li>Production support</li>
             <li>Documentation</li>
           </ul>
@@ -583,7 +509,7 @@
             <li><strong>Time Zone:</strong> GMT+8</li>
             <li><strong>Availability:</strong> 20–40 hours per week</li>
             <li><strong>Hourly Rate:</strong> ₱600 – ₱900 / hour</li>
-            <li><strong>Work Style:</strong> Remote</li>
+            <li><strong>Work Style:</strong> Remote / freelance</li>
           </ul>
         </div>
         <div class="mini-card">
@@ -592,17 +518,22 @@
             <li><strong>Name:</strong> Jayvee Rodrigueza</li>
             <li><strong>Email:</strong> jayveerodrigueza@gmail.com</li>
             <li><strong>Mobile:</strong> 09604493450</li>
-            <li><strong>GitHub / Portfolio Link:</strong> <a href="https://jayveerodrigueza.github.io/Portfolio/">Click here</a></li>
+            <li>
+            <strong>LinkedIn:</strong> 
+            <a href="https://www.linkedin.com/in/jayvee-rodrigueza/" target="_blank" class="link-style">
+    LinkedIn Profile
+  </a>
+</li>
           </ul>
           <br>
-      
+          
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-     • Jayvee Rodrigueza Portfolio • 
+    • Jayvee Rodrigueza Portfolio •
   </footer>
 </body>
 </html>
